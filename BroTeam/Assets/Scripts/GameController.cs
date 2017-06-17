@@ -58,11 +58,11 @@ public class GameController : MonoBehaviour {
 		
 	public void AddScore(string nameObject)
 	{
-		if (nameObject == "Enemy1")
+		if (nameObject == "Enemy2")
 		{
 			_score += 10;
 		}
-		if (nameObject == "Enemy2")
+		else
 		{
 			_score += 5;
 		}
