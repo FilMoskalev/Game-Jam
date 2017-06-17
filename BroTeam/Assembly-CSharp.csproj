@@ -50,10 +50,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Enemies\DestroyByTimeEnemies.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Enemy1Controller.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Enemy2Controller.cs" />
+    <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Player\GunModel.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Weapons\BoltMover.cs" />
-    <Compile Include="Assets\Scripts\Weapons\BulletMover.cs" />
+    <Compile Include="Assets\Scripts\Weapons\BoltController.cs" />
+    <Compile Include="Assets\Scripts\Weapons\BulletController.cs" />
     <Compile Include="Assets\Scripts\Weapons\DestroyByTimeShots.cs" />
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

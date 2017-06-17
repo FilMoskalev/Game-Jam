@@ -1,12 +1,11 @@
-﻿using Assets.Scripts.Player;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Player
 {
 	public class PlayerController : MonoBehaviour
 	{
 		public GameObject[] Weapons;
-
+		public float MaxSpeed;
 		private float _nextFireFirst = 0.3f;
 		private float _fireRateFirst = 0.7f;
 		private float _nextFireSecond = 0.3f;
@@ -39,13 +38,16 @@ namespace Player
 		}
 	
 		void Update () {
-			
+				if (_rbPlayer.velocity.magnitude > MaxSpeed)
+				{
+					_rbPlayer.velocity = _rbPlayer.velocity.normalized * MaxSpeed;
+				}
 		}
 
 		void FixedUpdate()
 		{
 			// gun rotation  FIRST
-			var speedRotFirst = 100;
+			var speedRotFirst = 200;
 			var inputFirstPlayer = Input.GetAxis("Horizontal");
 			_firstGun.transform.rotation *= Quaternion.Euler(0f, 0f, inputFirstPlayer*Time.deltaTime*speedRotFirst);
 			
@@ -61,7 +63,7 @@ namespace Player
 			}
 			
 			// gun rotation  SECOND
-			var speedRotSecond = 100;
+			var speedRotSecond = 200;
 			var inputSecondPlayer = Input.GetAxis("Horizontal11");
 			_secondGun.transform.rotation *= Quaternion.Euler(0f, 0f, inputSecondPlayer*Time.deltaTime*speedRotSecond);
 			
@@ -77,7 +79,7 @@ namespace Player
 			}
 					
 			// gun rotation  third
-			var speedRotthird = 100;
+			var speedRotthird = 200;
 			var inputThirdPlayer = Input.GetAxis("Horizontal22");
 			_thirdGun.transform.rotation *= Quaternion.Euler(0f, 0f, inputThirdPlayer*Time.deltaTime*speedRotthird);
 			

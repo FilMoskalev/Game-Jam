@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 
-namespace Weapons
+namespace Enemies
 {
-	public class DestroyByTimeShots : MonoBehaviour
-	{
+	public class DestroyByTimeEnemies : MonoBehaviour {
 
 		public float LifeTime;
 	
