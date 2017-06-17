@@ -109,11 +109,20 @@ namespace Player
 
 		void OnTriggerEnter(Collider other)
 		{
-			if (other.tag.Contains("Enemy"))
+			if (other.tag.Contains("BoltEnemy"))
 			{
 				Destroy(other.gameObject);
-				_playerHealth -= 5;				
+				_playerHealth -= 1;	
 			}
+			else
+			{
+				if (other.tag.Contains("Enemy"))
+				{
+					Destroy(other.gameObject);
+					_playerHealth -= 5;				
+				}
+			}
+			
 			PlayerHealth.text = "Health : " + _playerHealth + "%";
 		}
 	}

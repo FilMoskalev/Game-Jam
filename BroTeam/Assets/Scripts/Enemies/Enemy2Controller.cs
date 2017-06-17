@@ -1,16 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Enemy2Controller : MonoBehaviour {
+namespace Enemies
+{
+	public class Enemy2Controller : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+		public GameObject Shot;
+		public Transform ShotSpawn;
+		public float FireTime;
+		public float Delay;
+
+		private AudioSource _audioSource;
 	
-	// Update is called once per frame
-	void Update () {
-		
+		void Start ()
+		{
+			//_audioSource = GetComponent<AudioSource>();
+			InvokeRepeating("Fire", Delay, FireTime);
+		}
+
+		void Fire()
+		{
+			Instantiate(Shot, ShotSpawn.position, ShotSpawn.rotation);
+			//_audioSource.Play();
+		}
 	}
 }

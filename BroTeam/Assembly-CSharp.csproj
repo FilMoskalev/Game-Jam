@@ -78,6 +78,7 @@
     <Compile Include="Assets\BasicBeamShot\Script\ShotParticleEmitter.cs" />
     <Compile Include="Assets\BasicBeamShot\Script\ShotParticle_Scale.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Enemies\BoltEnemyMover.cs" />
     <Compile Include="Assets\Scripts\Enemies\DestroyByTimeEnemies.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy1Controller.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy2Controller.cs" />
