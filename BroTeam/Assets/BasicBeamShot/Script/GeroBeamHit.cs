@@ -19,9 +19,10 @@ public class GeroBeamHit : MonoBehaviour {
 			PatB.emissionRate = PatB_rate;
 			HitFlash.GetComponent<Renderer>().enabled = true;
 		}else{
+			/*
 			PatA.emissionRate = 0;
 			PatB.emissionRate = 0;
-			HitFlash.GetComponent<Renderer>().enabled = false;
+			HitFlash.GetComponent<Renderer>().enabled = false;*/
 		}
 	}
 

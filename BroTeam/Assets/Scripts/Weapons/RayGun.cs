@@ -1,24 +1,42 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class RayGun : MonoBehaviour {
+namespace Weapons
+{
+	public class RayGun : MonoBehaviour {
 
-	public GameObject Shot1;
-	public GameObject Shot2;
-	public GameObject Wave;
-	public float Disturbance = 0;
+		public GameObject Shot1;
+		public GameObject Shot2;
+		public GameObject Wave;
+		public float Disturbance = 0;
 
-	public int ShotType = 0;
+		public int ShotType = 0;
 
-	private GameObject NowShot;
+		private GameObject NowShot;
 
-	void Start () {
-		NowShot = null;
-	}
+		void Start () {
+			NowShot = null;
+			GameObject Bullet;
+			GameObject wav = (GameObject)Instantiate(Wave, this.transform.position, this.transform.rotation);
+			wav.transform.Rotate(Vector3.left, 90.0f);
+			wav.GetComponent<BeamWave>().col = this.GetComponent<BeamParam>().BeamColor;
 
-	void Update () {
-		GameObject Bullet;
+			Bullet = Shot2;
+			//Fire
+			NowShot = (GameObject)Instantiate(Bullet, this.transform.position, this.transform.rotation);
+			BeamParam bp = this.GetComponent<BeamParam>();
+			if(NowShot.GetComponent<BeamParam>().bGero)
+				NowShot.transform.parent = transform;
 
+			Vector3 s = new Vector3(bp.Scale,bp.Scale,bp.Scale);
+
+			NowShot.transform.localScale = s;
+			NowShot.GetComponent<BeamParam>().SetBeamParam(bp);
+			NowShot.GetComponent<BeamParam>().bEnd = true;
+		}
+
+		void Update () {
+			GameObject Bullet;
+			/*
 		//create BasicBeamShot
 		if (Input.GetButtonDown("Fire1"))
 		{
@@ -64,6 +82,7 @@ public class RayGun : MonoBehaviour {
 			{
 				NowShot.GetComponent<BeamParam>().bEnd = true;
 			}
+		}*/
 		}
 	}
 }

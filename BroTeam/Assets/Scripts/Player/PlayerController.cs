@@ -67,7 +67,7 @@ namespace Player
 			if (Input.GetButton("Fire1") && Time.time > _nextFireFirst)
 			{
 				_nextFireFirst = Time.time + _fireRateFirst;
-				var bulllet = Instantiate(Weapons[1], _shotSpawnFirst.transform.position, _shotSpawnFirst.transform.rotation);
+				var bulllet = Instantiate(Weapons[2], _shotSpawnFirst.transform.position, _shotSpawnFirst.transform.rotation);
 				// add force on player
 				var forcePowerFirst = 30f;
 				_rbPlayer.AddForce(new Vector3(_rbPlayer.position.x - _shotSpawnFirst.transform.position.x,
@@ -83,7 +83,7 @@ namespace Player
 			if (Input.GetButton("Fire11") && Time.time > _nextFireSecond)
 			{
 				_nextFireSecond = Time.time + _fireRateSecond;
-				var bulllet = Instantiate(Weapons[0], _shotSpawnSecond.transform.position, _shotSpawnSecond.transform.rotation);
+				var bulllet = Instantiate(Weapons[1], _shotSpawnSecond.transform.position, _shotSpawnSecond.transform.rotation);
 				// add force on player
 				var forcePowerSecond = 20f;
 				_rbPlayer.AddForce(new Vector3(_rbPlayer.position.x - _shotSpawnSecond.transform.position.x,

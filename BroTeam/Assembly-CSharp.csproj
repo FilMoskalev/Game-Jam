@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\Weapons\BulletController.cs" />
     <Compile Include="Assets\Scripts\Weapons\DestroyByTimeShots.cs" />
     <Compile Include="Assets\Scripts\Weapons\RayGun.cs" />
+    <Compile Include="Assets\Scripts\Weapons\RayShootController.cs" />
     <None Include="Assets\BasicBeamShot\sh\Add_UVScroll_sh.shader" />
     <None Include="Assets\BasicBeamShot\HowToUse_JP.txt" />
     <None Include="Assets\BasicBeamShot\sh\Sprite_Add_sh.shader" />
