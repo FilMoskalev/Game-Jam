@@ -15,8 +15,10 @@ ModelImporter:
     400006: Torus008
     2300000: Cylinder006
     2300002: Torus008
+    2300004: //RootNode
     3300000: Cylinder006
     3300002: Torus008
+    3300004: //RootNode
     4300000: Cylinder006
     4300002: Torus008
   materials:

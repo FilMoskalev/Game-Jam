@@ -10,7 +10,9 @@ ModelImporter:
     400000: //RootNode
     400002: Torus007
     2300000: Torus007
+    2300002: //RootNode
     3300000: Torus007
+    3300002: //RootNode
     4300000: Torus007
   materials:
     importMaterials: 1
