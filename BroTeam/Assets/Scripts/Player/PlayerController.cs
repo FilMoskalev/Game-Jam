@@ -10,13 +10,17 @@ namespace Assets.Scripts.Player
 		private float _fireRateFirst = 0.7f;
 		private float _nextFireSecond = 0.3f;
 		private float _fireRateSecond = 0.4f;
+		private float _nextFireThird = 0.3f;
+		private float _fireRateThird = 0.5f;
 		
 		private Rigidbody _rbPlayer;
 		private GameObject _firstGun;
 		private GameObject _secondGun;
+		private GameObject _thirdGun;
 		
 		private GameObject _shotSpawnFirst;
 		private GameObject _shotSpawnSecond;
+		private GameObject _shotSpawnThird;
 
 		private GunModel[] _gunModels;
 		
@@ -26,9 +30,11 @@ namespace Assets.Scripts.Player
 			
 			_firstGun = GameObject.FindWithTag("FirstGun");
 			_secondGun = GameObject.FindWithTag("SecondGun");
+			_thirdGun = GameObject.FindWithTag("ThirdGun");
 			
 			_shotSpawnFirst = GameObject.FindWithTag("ShotSpawnFirst");
 			_shotSpawnSecond = GameObject.FindWithTag("ShotSpawnSecond");
+			_shotSpawnThird = GameObject.FindWithTag("ShotSpawnThird");
 		}
 	
 		void Update () {
@@ -68,7 +74,24 @@ namespace Assets.Scripts.Player
 				_rbPlayer.AddForce(new Vector3(_rbPlayer.position.x - _shotSpawnSecond.transform.position.x,
 					                   _rbPlayer.position.y - _shotSpawnSecond.transform.position.y, 0f) * forcePowerSecond);
 			}
-			
+					
+			// gun rotation  third
+			var speedRotthird = 100;
+			var inputThirdPlayer = Input.GetAxis("Horizontal22");
+			_thirdGun.transform.rotation *= Quaternion.Euler(0f, 0f, inputThirdPlayer*Time.deltaTime*speedRotthird);
+			/*
+			// fire THIRD
+			Debug.Log(Input.GetButton("Fire25"));
+			Debug.Log(Input.GetButton("Fire11"));
+			if (Input.GetButton("Fire25") && Time.time > _nextFireThird)
+			{
+				_nextFireThird = Time.time + _fireRateThird;
+				var bulllet = Instantiate(Weapons[0], _shotSpawnThird.transform.position, _shotSpawnThird.transform.rotation);				
+				// add force on player
+				var forcePowerThird = 25f;
+				_rbPlayer.AddForce(new Vector3(_rbPlayer.position.x - _shotSpawnThird.transform.position.x,
+					                   _rbPlayer.position.y - _shotSpawnThird.transform.position.y, 0f) * forcePowerThird);
+			}*/
 		}
 	}
 }
