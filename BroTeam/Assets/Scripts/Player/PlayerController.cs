@@ -28,12 +28,12 @@ namespace Assets.Scripts.Player
 
 		void FixedUpdate()
 		{
-			// gun rotation
+			// gun rotation  FIRST
 			var speedRot = 100;
 			var inputFirstPlayer = Input.GetAxis("Horizontal");
 			_firstGun.transform.rotation *= Quaternion.Euler(0f, 0f, inputFirstPlayer*Time.deltaTime*speedRot);
 			
-			// fire
+			// fire FIRST
 			if (Input.GetButton("Fire1") && Time.time > _nextFire)
 			{
 				_nextFire = Time.time + _fireRate;
@@ -43,6 +43,10 @@ namespace Assets.Scripts.Player
 				_rbPlayer.AddForce(new Vector3(_rbPlayer.position.x - _shotSpawnFirst.transform.position.x,
 					_rbPlayer.position.y - _shotSpawnFirst.transform.position.y, 0f) * forcePower);
 			}
+			
+			
+			
+			
 		}
 	}
 }
