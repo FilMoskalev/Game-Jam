@@ -79,10 +79,8 @@ namespace Assets.Scripts.Player
 			var speedRotthird = 100;
 			var inputThirdPlayer = Input.GetAxis("Horizontal22");
 			_thirdGun.transform.rotation *= Quaternion.Euler(0f, 0f, inputThirdPlayer*Time.deltaTime*speedRotthird);
-			/*
+			
 			// fire THIRD
-			Debug.Log(Input.GetButton("Fire25"));
-			Debug.Log(Input.GetButton("Fire11"));
 			if (Input.GetButton("Fire25") && Time.time > _nextFireThird)
 			{
 				_nextFireThird = Time.time + _fireRateThird;
@@ -91,7 +89,7 @@ namespace Assets.Scripts.Player
 				var forcePowerThird = 25f;
 				_rbPlayer.AddForce(new Vector3(_rbPlayer.position.x - _shotSpawnThird.transform.position.x,
 					                   _rbPlayer.position.y - _shotSpawnThird.transform.position.y, 0f) * forcePowerThird);
-			}*/
+			}
 		}
 	}
 }
