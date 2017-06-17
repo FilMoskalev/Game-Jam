@@ -4,7 +4,9 @@ namespace Assets.Scripts.Player
 {
 	public class PlayerController : MonoBehaviour
 	{
-
+		public GameObject[] Weapons;
+		public GunModel GunModel;
+		
 		private Rigidbody _rbPlayer;
 		private GameObject _firstGun;
 

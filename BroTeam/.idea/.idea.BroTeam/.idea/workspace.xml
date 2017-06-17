@@ -15,11 +15,11 @@
       <file leaf-file-name="GunModel.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/GunModel.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="105">
+              <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
               <folding>
-                <marker date="1497686825407" expanded="true" signature="51:270" ph="{...}" />
-                <marker date="1497686825407" expanded="true" signature="80:268" ph="{...}" />
+                <marker date="1497688153921" expanded="true" signature="51:274" ph="{...}" />
+                <marker date="1497688153921" expanded="true" signature="84:272" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -28,15 +28,25 @@
       <file leaf-file-name="PlayerController.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            <state relative-caret-position="345">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
-                <marker date="1497686862286" expanded="true" signature="51:534" ph="{...}" />
-                <marker date="1497686862286" expanded="true" signature="100:532" ph="{...}" />
-                <marker date="1497686862286" expanded="true" signature="220:321" ph="{...}" />
-                <marker date="1497686862286" expanded="true" signature="341:350" ph="{...}" />
-                <marker date="1497686862286" expanded="true" signature="372:529" ph="{...}" />
+                <marker date="1497687986914" expanded="true" signature="51:595" ph="{...}" />
+                <marker date="1497687986914" expanded="true" signature="100:593" ph="{...}" />
+                <marker date="1497687986914" expanded="true" signature="281:382" ph="{...}" />
+                <marker date="1497687986914" expanded="true" signature="402:411" ph="{...}" />
+                <marker date="1497687986914" expanded="true" signature="433:590" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../Errant Ship/Assets/Scripts/PlayerController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -182,12 +192,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497685470735</updated>
-      <workItem from="1497685474941" duration="1391000" />
+      <workItem from="1497685474941" duration="3042000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1391000" />
+    <option name="totallyTimeSpent" value="3042000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -248,25 +258,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/GunModel.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="105">
+          <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
           <folding>
-            <marker date="1497686825407" expanded="true" signature="51:270" ph="{...}" />
-            <marker date="1497686825407" expanded="true" signature="80:268" ph="{...}" />
+            <marker date="1497688153921" expanded="true" signature="51:274" ph="{...}" />
+            <marker date="1497688153921" expanded="true" signature="84:272" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Errant Ship/Assets/Scripts/PlayerController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <marker date="1497686862286" expanded="true" signature="51:534" ph="{...}" />
-            <marker date="1497686862286" expanded="true" signature="100:532" ph="{...}" />
-            <marker date="1497686862286" expanded="true" signature="220:321" ph="{...}" />
-            <marker date="1497686862286" expanded="true" signature="341:350" ph="{...}" />
-            <marker date="1497686862286" expanded="true" signature="372:529" ph="{...}" />
+            <marker date="1497687986914" expanded="true" signature="51:595" ph="{...}" />
+            <marker date="1497687986914" expanded="true" signature="100:593" ph="{...}" />
+            <marker date="1497687986914" expanded="true" signature="281:382" ph="{...}" />
+            <marker date="1497687986914" expanded="true" signature="402:411" ph="{...}" />
+            <marker date="1497687986914" expanded="true" signature="433:590" ph="{...}" />
           </folding>
         </state>
       </provider>
