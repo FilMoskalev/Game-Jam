@@ -10,7 +10,9 @@ namespace Player
 		public Text PlayerHealth;
 		public Text TimeLeftText;
 		public float TimeLeft;
-		private float _nextFire = 0.3f;
+		private float _nextFireFirst = 0.3f;
+		private float _nextFireSecond = 0.3f;
+		private float _nextFireThird = 0.3f;
 		
 		private float _fireRateSecond = 0.4f;
 		private float _fireRateThird = 0.5f;
@@ -50,7 +52,7 @@ namespace Player
 			// guns models
 			_gunModels = new[]
 			{
-				new GunModel{ SpeedRotation = 300, FireRate = .2f, TypeWeapon = 1, Force = 100f, ModeControl = -1}, 
+				new GunModel{ SpeedRotation = 300, FireRate = .2f, TypeWeapon = 2, Force = 100f, ModeControl = -1}, 
 				new GunModel{ SpeedRotation = 200, FireRate = 0.4f, TypeWeapon = 1, Force = 20f, ModeControl = 1}, 
 				new GunModel{ SpeedRotation = 200, FireRate = 0.5f, TypeWeapon = 2, Force = 25f, ModeControl = 1} 
 			};
@@ -62,7 +64,7 @@ namespace Player
 			foreach (var model in _gunModels)
 			{
 				model.SpeedRotation = Random.Range(50, 400);
-				model.FireRate = Random.Range(.2f, 1f);
+				model.FireRate = Random.Range(.2f, .5f);
 				model.TypeWeapon = Random.Range(0, 3);
 				model.Force = Random.Range(10f, 100f);
 				model.ModeControl = Random.Range(0, 2) == 0 ? 1: -1;
@@ -94,9 +96,9 @@ namespace Player
 			_firstGun.transform.rotation *= Quaternion.Euler(0f, 0f, inputFirstPlayer * Time.deltaTime * speedRotFirst);
 
 			// fire FIRST
-			if (Input.GetButton("Fire1") && Time.time > _nextFire)
+			if (Input.GetButton("Fire1") && Time.time > _nextFireFirst)
 			{
-				_nextFire = Time.time + _gunModels[0].FireRate;
+				_nextFireFirst = Time.time + _gunModels[0].FireRate;
 				var bulllet = Instantiate(Weapons[_gunModels[0].TypeWeapon], _shotSpawnFirst.transform.position, _shotSpawnFirst.transform.rotation);
 				// add force on player
 				var forcePowerFirst = _gunModels[0].Force;
@@ -110,9 +112,9 @@ namespace Player
 			_secondGun.transform.rotation *= Quaternion.Euler(0f, 0f, inputSecondPlayer * Time.deltaTime * speedRotSecond);
 
 			// fire SECOND
-			if (Input.GetButton("Fire11") && Time.time > _nextFire)
+			if (Input.GetButton("Fire11") && Time.time > _nextFireSecond)
 			{
-				_nextFire = Time.time + _gunModels[1].FireRate;
+				_nextFireSecond = Time.time + _gunModels[1].FireRate;
 				var bulllet = Instantiate(Weapons[_gunModels[1].TypeWeapon], _shotSpawnSecond.transform.position, _shotSpawnSecond.transform.rotation);
 				// add force on player
 				var forcePowerSecond = _gunModels[1].Force;
@@ -126,9 +128,9 @@ namespace Player
 			_thirdGun.transform.rotation *= Quaternion.Euler(0f, 0f, inputThirdPlayer * Time.deltaTime * speedRotthird);
 
 			// fire THIRD
-			if (Input.GetButton("Fire25") && Time.time > _nextFire)
+			if (Input.GetButton("Fire25") && Time.time > _nextFireThird)
 			{
-				_nextFire = Time.time + _gunModels[2].FireRate;
+				_nextFireThird = Time.time + _gunModels[2].FireRate;
 				var bulllet = Instantiate(Weapons[_gunModels[2].TypeWeapon], _shotSpawnThird.transform.position, _shotSpawnThird.transform.rotation);
 				// add force on player
 				var forcePowerThird = _gunModels[2].Force;
