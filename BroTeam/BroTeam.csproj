@@ -86,139 +86,189 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\Antialiasing.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\Bloom.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\BloomOptimized.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\Blur.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\BlurOptimized.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\CameraMotionBlur.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\ColorCorrectionCurves.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\ColorCorrectionLookup.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\ColorCorrectionRamp.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\ContrastEnhance.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\ContrastStretch.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\CreaseShading.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\DepthOfField.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\DepthOfFieldDeprecated.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\EdgeDetection.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\Fisheye.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\GlobalFog.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\Grayscale.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\ImageEffectBase.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\ImageEffects.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\MotionBlur.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\NoiseAndGrain.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\NoiseAndScratches.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\PostEffectsHelper.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\Quads.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\ScreenOverlay.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\ScreenSpaceAmbientObscurance.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\SepiaTone.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\SunShafts.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\TiltShift.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\Tonemapping.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\Triangles.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\Twirl.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
+    <Compile Include="Assets\Assetes for master 2\Effects\ImageEffects\Scripts\Vortex.cs" />
+    <Compile Include="Assets\Assetes for master 2\Particle Ribbon\Scripts\ReverseNormals.cs" />
+    <Compile Include="Assets\Assetes for master 2\PowerUp\Scripts\CustomizablePowerUp.cs" />
+    <Compile Include="Assets\Assetes for master 2\PowerUp\Scripts\PowerUpManager.cs" />
+    <Compile Include="Assets\Assetes for master 2\PowerUp\Scripts\PowerUpRotation.cs" />
+    <Compile Include="Assets\Assetes for master 2\PowerUp\Scripts\ScaleParticles.cs" />
+    <Compile Include="Assets\Assetes for master 2\PowerUp\Scripts\TakeablePowerUp.cs" />
+    <Compile Include="Assets\Assetes for master 2\PowerUp\Scripts\Utility\Singleton.cs" />
+    <Compile Include="Assets\Assetes for master 2\VolumetricLines\ExampleScenes\ExampleScripts\CannonBehavior.cs" />
+    <Compile Include="Assets\Assetes for master 2\VolumetricLines\ExampleScenes\ExampleScripts\CreateSinShapedLineStrip.cs" />
+    <Compile Include="Assets\Assetes for master 2\VolumetricLines\ExampleScenes\ExampleScripts\ShotBehavior.cs" />
+    <Compile Include="Assets\Assetes for master 2\VolumetricLines\Scripts\SetFovGlobalShaderVariable.cs" />
+    <Compile Include="Assets\Assetes for master 2\VolumetricLines\Scripts\Utils\ExposePropertyAttribute.cs" />
+    <Compile Include="Assets\Assetes for master 2\VolumetricLines\Scripts\Utils\TransformExtensionMethods.cs" />
+    <Compile Include="Assets\Assetes for master 2\VolumetricLines\Scripts\VolumetricLineBehavior.cs" />
+    <Compile Include="Assets\Assetes for master 2\VolumetricLines\Scripts\VolumetricLineStripBehavior.cs" />
+    <Compile Include="Assets\Assetes for master 2\VolumetricLines\Scripts\VolumetricMultiLineBehavior.cs" />
+    <Compile Include="Assets\BasicBeamShot\Character Controllers\Sources\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\BasicBeamShot\SampleStage\GetUI.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\AutoDestroy.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\BM_WaveEffect.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\BasicBullet.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\BeamCollision.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\BeamLine.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\BeamParam.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\BeamWave.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\BillBoard.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\Create_MyLineMesh.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\Flash.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\GeroBeam.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\GeroBeamHit.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\GetColor_BeamLine.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\GetColor_Flash.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\GetColor_Particle.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\JumpScene.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\MouseTgt.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\MultiShooter.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\RandomRotate.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\ScaleWiggle.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\SceneMaster.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\ShooterRotate.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\ShotBase.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\ShotParticleEmitter.cs" />
+    <Compile Include="Assets\BasicBeamShot\Script\ShotParticle_Scale.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Enemies\BoltEnemyMover.cs" />
     <Compile Include="Assets\Scripts\Enemies\DestroyByTimeEnemies.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy1Controller.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy2Controller.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Player\GunModel.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\RandomRotation.cs" />
     <Compile Include="Assets\Scripts\Weapons\BoltController.cs" />
     <Compile Include="Assets\Scripts\Weapons\BulletController.cs" />
     <Compile Include="Assets\Scripts\Weapons\DestroyByTimeShots.cs" />
+    <Compile Include="Assets\Scripts\Weapons\RayGun.cs" />
+    <Compile Include="Assets\Scripts\Weapons\RayShootController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\CreaseApply.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\GlobalFog.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\GrayscaleEffect.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\MotionBlur.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\RadialBlur.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\SSAOShader.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\SepiaToneEffect.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\Tonemapper.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\VignettingShader.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\VortexEffect.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+    <None Include="Assets\Assetes for master 2\Effects\ImageEffects\Shaders\frag_ao.cginc" />
+    <None Include="Assets\Assetes for master 2\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
+    <None Include="Assets\Assetes for master 2\Particle Ribbon\readme_Simple_Particle_Ribbon.txt" />
+    <None Include="Assets\Assetes for master 2\VolumetricLines\Shaders\Additive.shader" />
+    <None Include="Assets\Assetes for master 2\VolumetricLines\Shaders\AlphaBlended.shader" />
+    <None Include="Assets\Assetes for master 2\VolumetricLines\Shaders\Fast-Additive.shader" />
+    <None Include="Assets\Assetes for master 2\VolumetricLines\Shaders\Fast-AlphaBlended.shader" />
+    <None Include="Assets\Assetes for master 2\VolumetricLines\Shaders\Strip-Additive.shader" />
+    <None Include="Assets\Assetes for master 2\VolumetricLines\Shaders\Strip-AlphaBlended.shader" />
+    <None Include="Assets\Assetes for master 2\VolumetricLines\Shaders\_SimpleShader.cginc" />
+    <None Include="Assets\Assetes for master 2\VolumetricLines\Shaders\_StripShader.cginc" />
+    <None Include="Assets\BasicBeamShot\HowToUse_EN.txt" />
+    <None Include="Assets\BasicBeamShot\HowToUse_JP.txt" />
+    <None Include="Assets\BasicBeamShot\sh\AddColor_sh.shader" />
+    <None Include="Assets\BasicBeamShot\sh\Add_UVScroll_sh.shader" />
+    <None Include="Assets\BasicBeamShot\sh\BeamLine_sh.shader" />
+    <None Include="Assets\BasicBeamShot\sh\GeroBeam_sh.shader" />
+    <None Include="Assets\BasicBeamShot\sh\Sprite_Add_sh.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-  </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor\Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
